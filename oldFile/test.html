@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            $(document).ready(function () {
+                $("input[name$='cars']").click(function () {
+                    var test = $(this).val();
+
+                    $("div.desc").hide();
+                    $("#Cars" + test).show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+
+        <div id="myRadioGroup">
+            2 Cars<input type="radio" name="cars" checked="checked" value="2"  />
+            3 Cars<input type="radio" name="cars" value="3" />
+
+            <div id="Cars2" class="desc">
+                2 Cars Selected
+            </div>
+            <div id="Cars3" class="desc" style="display: none;">
+                3 Cars
+            </div>
+        </div>
+    </body>
+</html>

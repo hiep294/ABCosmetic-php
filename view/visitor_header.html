@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="./visitor_about.php">About</a>
+<!--                <a href="#">Customer Care</a>-->
+                <!--<a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>-->
+                <!--<a href="./login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>-->
+
+
+            </div>
+        </div>
+        <!--script for customer care-->
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <div class="body2">
+            <div class="sticky2">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span> 
+                            </button>
+                            <a class="navbar-brand" href="#"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="./visitor_index.php">Home</a></li>
+                                <!-- nav bar drop down -->
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Skin Care</a></li>
+                                        <li><a href="#">Make-up & Nails</a></li>
+                                        <li><a href="#">Hair Care & Styling</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>
+                                        <span class="glyphicon glyphicon-user" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                                    </a>
+                                </li>
+                                <!-- end of drop down -->
+                                <!--<li><a href="#">Voucher</a></li>-->
+                            </ul>
+                            <!-- search box -->
+                            <form class="navbar-form navbar-left" action="/action_page.php">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Find products, brands,..." name="search">
+                                </div>
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="ahead">
+                <a href="./visitor_index.php">
+                    <div class="jumbotron text-center"> <!-- full -->
+                        <h1><div class="t3">ABCOSMETIC SHOP</div></h1>
+                        <p><span class="sologan">This is a demo web site which is not used for commerce!</span></p>
+                    </div>                    
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

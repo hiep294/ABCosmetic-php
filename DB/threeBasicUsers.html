@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AddStaff</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- /*for rating*/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- css -->
+        <link rel="stylesheet" href="../public/css/laptop.css">
+    </head>
+    <body>
+        <div>Create An Account For Admin</div>
+        <form action="./AddStaff.php" method="post">
+            <div class="form-group" style="width: 30%;">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group" style="width: 30%;">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" name="phone">
+            </div>
+            <div class="form-group" style="width: 30%;">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group" style="width: 30%;">
+                <label for="storeId">StoreId:</label>
+                <input type="number" class="form-control" name="storeid">
+            </div>
+            <div class="form-group" style="width: 30%;">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" name="password">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Role: </label>
+                <input type="radio" name="therole" value="1"> Admin 
+                <input type="radio" name="therole" value="2"> National Manager                
+                <input type="radio" name="therole" value="3"> Sale Staff 
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+
+    </body>
+</html>
